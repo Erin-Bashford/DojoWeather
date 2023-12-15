@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="dojoStyle.css">
+</head>
+<body>
+    <!--header start-->
+    <header>
+        <div class="d-flex container">
+            <h1>DojoWeather</h1>
+            <ul class="d-flex">
+                <li onclick="alert('Loading weather report...')">Burbank</li>
+                <li onclick="alert('Loading weather report...')">Chicago</li>
+                <li onclick="alert('Loading weather report...')">Dallas</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+    <!--subheader start-->
+        <div class="currentCity container d-flex">
+            <h2>San Jose</h2>
+            <label for="unitOfTemp">show temperature in
+            <select name="unitOfTemp" id="fahrVsCel" onchange="changeTempUnits(this.value)">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </label>
+            </select>
+        </div>
+        <!--card start-->
+        <div class="container d-flex">
+            <!--1st card-->
+            <div class="card">
+                <h3>Today</h3>
+                <i class="fa-solid fa-cloud-rain fa-fade"></i>
+                <p>some rain</p>
+                <div class="d-flex temperatures"> 
+                    <div class="highRed temperatureNum" id="todayRed">24°</div>  
+                    <div class="lowBlue temperatureNum" id="todayBlue">18°</div>
+                </div>
+            </div>
+            <!--2nd card-->
+            <div class="card">
+                <h3>Tomorrow</h3>
+                <i class="fa-solid fa-sun fa-spin"></i>
+                <p>some sun</p>
+                <div class="d-flex temperatures"> 
+                    <div class="highRed temperatureNum" id="tomorrowRed">27°</div>  
+                    <div class="lowBlue temperatureNum" id="tomorrowBlue">19°</div>
+                </div>
+            </div>
+            <!--3rd card-->
+            <div class="card">
+                <h3>Friday</h3>
+                <i class="fa-solid fa-cloud fa-flip"></i>
+                <p>some clouds</p>
+                <div class="d-flex temperatures"> 
+                    <div class="highRed temperatureNum" id="fridayRed">21°</div>  
+                    <div class="lowBlue temperatureNum" id="fridayBlue">16°</div>
+                </div>
+            </div>
+            <!--4th card-->
+            <div class="card">
+                <h3>Saturday</h3>
+                <i class="fa-solid fa-sun fa-spin"></i>
+                <p>some sun</p>
+                <div class="d-flex temperatures"> 
+                    <div class="highRed temperatureNum" id="saturdayRed">26°</div>  
+                    <div class="lowBlue temperatureNum" id="saturdayBlue">21°</div>
+                </div>
+            </div>
+        </div>
+        <!--Start cookie alert-->
+        <div class="container d-flex cookie">
+            <i class="fa-solid fa-cookie-bite"></i>
+            <div>
+                <h4>Stop! Cookie time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. 
+                    <a href="#">Read more...</a> 
+                </p>
+            </div>
+            <button onclick="removeCookie(this)">I Accept</button>
+        </div>
+    </main>
+    <script src="dojoScript.js"></script>
+    <script src="https://kit.fontawesome.com/f956fb4177.js" crossorigin="anonymous"></script>
+</body>
+</html>

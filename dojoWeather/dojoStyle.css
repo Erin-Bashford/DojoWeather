@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', sans-serif;
+}
+
+/*Utility classes*/
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.card {
+    text-align: center;
+    background-color: #eeeeee;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/*Header start*/
+header {
+    color: white;
+    background-color: #9fc5f8;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    flex: 2;
+    font-size: 32pt;
+}
+
+ul {
+    flex: 1;
+    font-size: 16pt;
+    list-style-type: none;
+}
+
+/*Main sub-header start*/
+
+.currentCity {
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+.currentCity > label {
+    justify-self: flex-end;
+}
+
+select {
+    border: 2px solid black;
+    font-size: 16pt;
+}
+
+/*Cards start*/
+
+h3 {
+    font-size: 16pt;
+    padding-bottom: 10pt;
+}
+
+i {
+    font-size: 56pt;
+    padding: 10px 30px 30px;
+}
+
+.fa-cloud-rain {
+    color: #2b78e4;
+}
+
+.fa-sun {
+    color: #f7e709;
+}
+
+.fa-cloud {
+    color: rgb(105, 105, 105);
+}
+
+.highRed {
+    color: #cf2a27;
+    padding: 20px 10px;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.lowBlue {
+    color: #2b78e4;
+    padding: 20px 10px;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+/*Cookie start*/
+
+.cookie {
+    border: 4px solid black;
+    background-color: #eeeeee;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -400px;
+}
+
+.fa-cookie-bite {
+    font-size: 40pt;
+}
+
+button {
+    background-color: #9fc5f8;
+    padding: 10px 40px;
+    box-shadow: 2px 2px black;
+    font-size: 14pt;
+    white-space: nowrap;
+}
